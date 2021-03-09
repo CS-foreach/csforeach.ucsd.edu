@@ -14,6 +14,7 @@
 	<title>CS foreach</title>
 	<link rel="icon" href="res/icons/tab-icon.png" />
 	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </html>
 <body>
 	<header id="header">
@@ -141,11 +142,15 @@
 					<div class="home-buttons">
 						<div class='home-button-div' style="width:20%; border-radius:20px; margin:0px 10vw">
 							<h3 class="button-title">College Students:</h3>
-							<button class="home-button" onClick=>Join Us</button>
+							<a href="#">
+								<button class="home-button">Join Us</button>
+							</a>
 						</div>
 						<div class='home-button-div' style="width:20%; border-radius:20px; margin:0px 10vw">
 							<h3 class="button-title">Schools:</h3>
-							<button class="home-button">Contact Us</button>
+							<a href="#">
+								<button class="home-button">Contact Us</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -357,14 +362,25 @@
 			<div class="content blue-container">
 				<h1 class="section-title">Contact Us</h1>
 				<div class="social-media-div">
-					<div class="social-media">
+					<!-- Font awesome icons -->
+					<a href='mailto=@'>
+						<i class="far fa-paper-plane fa-3x"></i>
+					</a>
+					<a href="https://www.facebook.com/csforeach/">
+						<i class="fab fa-facebook fa-3x"> </i>
+					</a>
+					<a href='https://www.instagram.com/ucsdtritonhacks/'>
+						<i class="fab fa-instagram fa-3x"></i>
+					</a>
+					<!-- <div class="social-media">
+						<i class='fab fa-github fa-5x'></i>
 						<object class='social-media-item' id="facebook-logo" data="res/facebook.svg"></object>
 						<p>some facebook address</p>
 					</div>
 					<div class="social-media">
 						<object id="mail-logo" data="res/mail.svg"></object>
 						<p>some mail address</p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>

@@ -374,7 +374,7 @@ padding: 20px;
 */
 .footer {
 	position: absolute;
-	height: 395px;
+	height: 200px;
 	left: 0;
 	right: 0;
 	background: var(--csfe-blue);
@@ -391,7 +391,20 @@ padding: 20px;
 	font-family: Source Code Pro;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: max(25px,3vw);
 	line-height: 63px;
 	text-transform: uppercase;
+}
+
+.social-media-div {
+	display: flex;
+}
+
+.social-media-div i{
+	margin: 20px;
+	color: white;
+}
+.social-media-div i:hover {
+	transform: scale(1.1);
+	transition-duration: 0.2s;
 }

@@ -146,7 +146,6 @@ header {
 
 #home {
 	height: 95vh;
-	position: absolute;
 	overflow: hidden;
 }
 
@@ -220,6 +219,9 @@ header {
 * About
 */
 
+.offerings-row {
+	margin-bottom: 5vh;
+}
 /**
 * Youtube Video
 */

@@ -153,25 +153,29 @@ header {
 	/* display: grid; */
 	align-items: center;
 }
+#home .text-content {
+	text-align: center;
+
+}
 
 .page-title {
 	margin-bottom: 10px;
 	line-height: 50px;
 	padding: 0;
-	font-family: Source Code Pro;
+	font-family: "Source Code Pro";
 	font-style: normal;
 	font-weight: bold;
-	font-size: 5vw;
+	font-size: max(30px,5vw);
 	line-height: 12vh;
 	letter-spacing: -0.03em;
 	color: #ffffff;
 }
 
 .page-title-start {
-	font-family: Source Code Pro;
+	font-family: "Source Code Pro";
 	font-style: normal;
 	font-weight: normal;
-	font-size: 4vw;
+	font-size: max(25px,4vw);
 	line-height: 9vh;
 	letter-spacing: -0.03em;
 
@@ -190,17 +194,16 @@ header {
 	color: white;
 }
 
-#home .home-buttons {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
 
+#home .description {
+	margin-bottom: 5vh;
+	font-size: max(20px, 2vw);
+}
 #home .home-button {
 	width: 235px;
 	height: 70px;
 	border-radius: 100px;
+	border: none;
 	background-color: white;
 	color: #4454e9;
 	font-family: 'Source Sans Pro';
@@ -209,11 +212,48 @@ header {
 	font-size: 30px;
 	line-height: 38px;
 	text-align: center;
+} 
+
+.home-button-div {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
-#home .description {
-	margin-bottom: 5vh;
+.button-title {
+	padding: 5px;
+	
+    overflow: hidden;
+    white-space: nowrap;
 }
+.home-buttons {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	padding: 10px 5px;
+}
+.home-buttons.flex-start {
+	justify-content: flex-start;
+}
+.home-buttons.center {
+	justify-content: center;
+}
+.home-buttons.space-between {
+	justify-content: space-between;
+}
+.home-buttons.space-around {
+	justify-content: space-around;
+}
+.home-buttons .home-button-div {
+	padding: 20px;
+	margin: 0px 200px;
+}
+
+.home-button-div {
+	  flex: 0 0 calc(100%/3 - 40px);
+  }
+
 
 /**
 * About
@@ -233,17 +273,14 @@ header {
 	padding-top: 44%;
 }
 .csfe-video iframe {
-	/*
-	margin-left: 10vw;
-	width: 80vw !important;
-	height: 90vh !important; */
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	width: 100%;
-	height: 100%;
+	margin-left: 10%;
+	width: 80%;
+	height: 80%;
 }
 
 /**
@@ -251,19 +288,86 @@ header {
 */
 #team .content {
 	align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1vh;
+}
+#team .section-title, .title-subtext {
+	color: var(--csfe-blue)
 }
 .team-members {
 	display: flex;
 	flex-wrap: wrap;
 	width: 80%;
-	margin-left: 10%;
 }
 
-.team-member {
-	flex: 1 0 21%;
-	margin: 5px;
-	height: 350px;
+  
+/**
+* https://codepen.io/ccania/pen/LmjveK
+* copied this for the team member cards
+*/
+#team {
+	display: flex;
+	flex-flow: row wrap;
 }
+
+#team .member-picture {
+	margin: 0px;
+}
+
+#team .member-picture img {
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#team .member-picture img:hover {
+opacity: 0.6;
+transition: all .3s linear;
+}
+.column {
+box-sizing: border-box;
+flex: 1 100%;
+justify-content: space-evenly;
+margin: 20px;
+}
+.card-style {
+border-radius: 12px;
+border-image-slice: 1;
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+transition: all 0.25s linear;
+}
+.card-style:hover {
+box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card-text {
+padding: 20px;
+}
+
+@media (min-width: 500px) {
+.column {
+	flex: 0 0 calc(100%/1 - 40px);
+}
+}
+@media (min-width: 768px) {
+.column {
+	flex: 0 0 calc(100%/2 - 40px);
+}
+}
+@media (min-width: 1000px) {
+.column {
+	flex: 0 0 calc(100%/3 - 40px);
+}
+}
+@media (min-width: 1200px) {
+	.column {
+	flex: 0 0 calc(100%/4 - 40px);
+}
+}
+
 
 /**
 * Footer

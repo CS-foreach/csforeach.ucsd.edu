@@ -83,7 +83,7 @@ h3 {
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	position: absolute;
 	padding: 20px 5vw 20px 5vw;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -217,14 +217,19 @@ header {
 	height: 70px;
 	border-radius: 100px;
 	border: none;
-	background-color: white;
+	background-color: var(--csfe-white);
 	color: #4454e9;
 	font-family: 'Source Sans Pro';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
-	line-height: 38px;
+	line-height: 70px;
 	text-align: center;
+}
+#home .home-button:hover {
+	background-color: red; /* temporary, making sure it works*/
+	color: var(--csfe-white);
+	transition: 0.2s;
 }
 
 .home-button-div {
@@ -253,10 +258,10 @@ header {
 	justify-content: center;
 }
 .home-buttons.space-between {
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 .home-buttons.space-around {
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .home-buttons .home-button-div {
 	padding: 20px;
@@ -283,7 +288,7 @@ header {
 #about .offerings-row {
 	/* margin-bottom: 5vh; */
 	display: flex;
-	flex-direction: horizontal;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	overflow: auto;
@@ -339,9 +344,45 @@ header {
 	height: 80%;
 }
 
-/**
-* Team Members
-*/
+/* Sponsors */
+#sponsors .content {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+}
+#sponsors .section-title {
+	margin: 20px;
+}
+#sponsors .sponsor-box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	width: 80%;
+}
+#sponsors .sponsor-box object {
+	width: 250px;
+	margin: 20px;
+}
+#sponsors .sponsor-btn {
+	border: 2px solid white;
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 30px;
+	font-family: 'Source Sans Pro';
+	color: var(--csfe-white);
+	width: 235px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 5vh;
+}
+#sponsors .sponsor-btn:hover {
+	transition: 0.1s;
+	border-color: red; /* temporary, making sure it works*/
+}
+/* Team Members*/
 #team .content {
 	display: flex;
 	flex-direction: column;
@@ -356,6 +397,7 @@ header {
 .team-members {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	width: 80%;
 }
 
@@ -373,7 +415,7 @@ header {
 }
 
 #team .member-picture img {
-	width: 100%;
+	width: 300px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
@@ -404,17 +446,17 @@ header {
 
 @media (min-width: 500px) {
 	.column {
-		flex: 0 0 calc(100% / 1 - 40px);
+		flex: 0 0 calc(300px / 1 - 40px);
 	}
 }
 @media (min-width: 768px) {
 	.column {
-		flex: 0 0 calc(100% / 2 - 40px);
+		flex: 0 0 calc(300px / 2 - 40px);
 	}
 }
 @media (min-width: 1000px) {
 	.column {
-		flex: 0 0 calc(100% / 3 - 40px);
+		flex: 0 0 calc(300px / 3 - 40px);
 	}
 }
 @media (min-width: 1200px) {

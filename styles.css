@@ -159,7 +159,7 @@ header {
 /* Home page */
 .home-background {
 	background: url('./res/home-background.png');
-	height: auto;
+	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -245,13 +245,12 @@ header {
 	flex-direction: row;
 	align-items: center;
 	padding: 10px 5px;
-	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 .home-buttons .home-button-div {
 	padding: 20px;
-	margin: 0px 50px;
-	width: 300px;
+	margin: 0px 5px;
+	width: 235px;
 }
 
 /* About */

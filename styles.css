@@ -406,6 +406,12 @@ header {
 	justify-content: center;
 }
 
+.event-link {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
 /* Join Us */
 #join .content {
 	display: flex;

@@ -48,6 +48,9 @@ h3 {
 	font-size: max(30px, 3vw);
 }
 
+.section-title-blue, .section-title-white {
+	text-transform: uppercase;
+}
 .section-title-blue {
 	color: var(--csfe-blue);
 }
@@ -450,7 +453,70 @@ header {
 	justify-content: center;
 }
 
+/* Join us */
+#join .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
+}
+.join-list {
+	display: flex;
+	width: 70vw;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.join-list-item {
+	margin: 0 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.number {
+	font-family: Source Sans Pro;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 100px;
+line-height: 126px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: rgba(68, 84, 233, 0.6);
+}
+.desc {
+	margin: 20px;
+	width: 250px;
+}
+.join-msg {
+	font-family: 'Source Sans Pro';
+	color: var(--csfe-blue);
+	font-weight: normal;
+}
+
+.join-btn {
+	border: 2px solid var(--csfe-blue);
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 30px;
+	font-family: 'Source Sans Pro';
+	color: var(--csfe-blue);
+	width: 235px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 5vh;
+}
+.join-btn:hover {
+	transition: 0.1s;
+	border-color: red; /* temporary, making sure it works*/
+}
+}
 /**
 * Team Members
 */

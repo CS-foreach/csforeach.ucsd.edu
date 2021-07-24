@@ -188,11 +188,11 @@ header {
 
 #home .content {
 	align-items: center;
-	margin: 0;
-	top: 50%;
-	position: absolute;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	margin: auto;
+	top: 25%;
+	position: relative;
+	/* -ms-transform: translateY(-20%);
+	transform: translateY(-20%); */
 }
 
 .page-title {
@@ -232,8 +232,20 @@ header {
 #home .description {
 	margin-bottom: 3vh;
 	margin-top: 3vh;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: max(20px, 1.5vw);
+	width: 65%;
 }
+
+#home .description a {
+	color: rgb(172, 198, 255)
+}
+
+#home .description a:hover {
+	color: rgb(0, 94, 148)
+}
+
 
 .home-button-div {
 	justify-content: center;
